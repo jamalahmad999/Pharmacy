@@ -1,0 +1,80 @@
+[
+  {
+    "_id": "690a23a75f7d95621ce122e3",
+    "customerInfo": {
+      "firstName": "Malik",
+      "lastName": "Malik",
+      "email": "codesofadan@gmail.com",
+      "phone": "+447498428619"
+    },
+    "shippingAddress": {
+      "addressLine1": "No office",
+      "addressLine2": "",
+      "city": "Clydebank",
+      "emirate": "Dubai",
+      "country": "UAE",
+      "zipCode": ""
+    },
+    "items": [
+      {
+        "product": "6905c1ad895b6c34fd6b813d",
+        "name": "Nivea",
+        "price": 200,
+        "quantity": 2,
+        "image": "http://localhost:5000/uploads/products/product-1761984937402-203012824.jpeg",
+        "_id": "690a23a75f7d95621ce122e4"
+      }
+    ],
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "paymentId": "pi_1762272166965",
+    "orderStatus": "pending",
+    "subtotal": 400,
+    "tax": 20,
+    "shipping": 0,
+    "total": 420,
+    "orderNotes": "",
+    "orderNumber": "ORD1762272167059",
+    "createdAt": "2025-11-04T16:02:47.098Z",
+    "updatedAt": "2025-11-04T16:02:47.098Z",
+    "__v": 0
+  },
+  {
+    "_id": "690f28b2b0950917f4b556ff",
+    "customerInfo": {
+      "firstName": "Muhammad Adan",
+      "lastName": "Muhammad Adan",
+      "email": "graphicology7@gmail.com",
+      "phone": "+92920329760623"
+    },
+    "shippingAddress": {
+      "addressLine1": "No office",
+      "addressLine2": "",
+      "city": "Clydebank",
+      "emirate": "Dubai",
+      "country": "UAE",
+      "zipCode": ""
+    },
+    "items": [
+      {
+        "name": "Clear Cool Sport Menthol-Male 400 ml",
+        "price": 78,
+        "quantity": 1,
+        "image": "/Clear Cool Sport Menthol-Male 400 ml.jpg",
+        "_id": "690f28b2b0950917f4b55700"
+      }
+    ],
+    "paymentMethod": "cod",
+    "paymentStatus": "pending",
+    "orderStatus": "pending",
+    "subtotal": 78,
+    "tax": 3.9000000000000004,
+    "shipping": 0,
+    "total": 81.9,
+    "orderNotes": "",
+    "orderNumber": "ORD1762601138410",
+    "createdAt": "2025-11-08T11:25:38.431Z",
+    "updatedAt": "2025-11-08T11:25:38.431Z",
+    "__v": 0
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "_id": "6938499c00d617292f762afd",
+    "patientName": "adan",
+    "phone": "+92920329760623",
+    "address": "123",
+    "notes": "",
+    "prescriptionImages": [
+      {
+        "url": "https://res.cloudinary.com/do8z0tbui/image/upload/v1765296526/lifepharmacy/prescriptions/pide4wgsp0l7l6tmlfcx.png",
+        "_id": "6938499c00d617292f762afe",
+        "uploadedAt": "2025-12-09T16:09:00.202Z"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2025-12-09T16:09:00.210Z",
+    "updatedAt": "2025-12-10T14:14:43.296Z",
+    "__v": 0
+  },
+  {
+    "_id": "69398036d77bf5701efd307c",
+    "patientName": "waqas",
+    "phone": "0558021955",
+    "address": "waqas",
+    "notes": "wwwww",
+    "prescriptionImages": [
+      {
+        "url": "https://res.cloudinary.com/do8z0tbui/image/upload/v1765376046/lifepharmacy/prescriptions/pghrgbbo1muywe1c8wj7.jpg",
+        "_id": "69398036d77bf5701efd307d",
+        "uploadedAt": "2025-12-10T14:14:14.186Z"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2025-12-10T14:14:14.196Z",
+    "updatedAt": "2025-12-10T14:14:38.849Z",
+    "__v": 0
+  },
+  {
+    "_id": "693d279266a1951fc4bce4d3",
+    "patientName": "waqas",
+    "phone": "0558021955",
+    "address": "textfor location map ",
+    "notes": "sssss",
+    "prescriptionImages": [
+      {
+        "url": "https://res.cloudinary.com/do8z0tbui/image/upload/v1765615491/lifepharmacy/prescriptions/rr4gxdvrkxy7guflub0n.png",
+        "_id": "693d279266a1951fc4bce4d4",
+        "uploadedAt": "2025-12-13T08:45:06.637Z"
+      }
+    ],
+    "status": "pending",
+    "createdAt": "2025-12-13T08:45:06.642Z",
+    "updatedAt": "2025-12-13T08:45:06.642Z",
+    "__v": 0
+  },
+  {
+    "_id": "693d280d6ca32a61c80c6b60",
+    "patientName": "waqas",
+    "phone": "0558021955",
+    "address": "check my location map i add it there ",
+    "notes": "aaaa",
+    "prescriptionImages": [
+      {
+        "url": "https://res.cloudinary.com/do8z0tbui/image/upload/v1765615613/lifepharmacy/prescriptions/c9argnqjl3cmuxzxsku5.webp",
+        "_id": "693d280d6ca32a61c80c6b61",
+        "uploadedAt": "2025-12-13T08:47:09.469Z"
+      }
+    ],
+    "status": "completed",
+    "createdAt": "2025-12-13T08:47:09.474Z",
+    "updatedAt": "2025-12-13T08:47:27.149Z",
+    "__v": 0
+  },
+  {
+    "_id": "694a9a74439ed4fc26eaa5b2",
+    "patientName": "waqas",
+    "phone": "0558021955",
+    "address": "wwww",
+    "notes": "wwwww",
+    "prescriptionImages": [
+      {
+        "url": "https://res.cloudinary.com/do8z0tbui/image/upload/v1766496870/lifepharmacy/prescriptions/pbwwqnte0cifmbd0azzc.jpg",
+        "_id": "694a9a74439ed4fc26eaa5b3",
+        "uploadedAt": "2025-12-23T13:34:44.709Z"
+      },
+      {
+        "url": "https://res.cloudinary.com/do8z0tbui/image/upload/v1766496881/lifepharmacy/prescriptions/ge03f3ipgikaycuos8ks.jpg",
+        "_id": "694a9a74439ed4fc26eaa5b4",
+        "uploadedAt": "2025-12-23T13:34:44.710Z"
+      }
+    ],
+    "status": "pending",
+    "createdAt": "2025-12-23T13:34:44.714Z",
+    "updatedAt": "2025-12-23T13:34:44.714Z",
+    "__v": 0
+  }
+]

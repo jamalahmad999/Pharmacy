@@ -1,0 +1,32 @@
+{
+  "backupDate": "2026-01-14T15:11:28.913Z",
+  "totalCollections": 6,
+  "totalDocuments": 1794,
+  "collections": [
+    {
+      "name": "users",
+      "fileName": "users.json"
+    },
+    {
+      "name": "products",
+      "fileName": "products.json"
+    },
+    {
+      "name": "categories",
+      "fileName": "categories.json"
+    },
+    {
+      "name": "brands",
+      "fileName": "brands.json"
+    },
+    {
+      "name": "orders",
+      "fileName": "orders.json"
+    },
+    {
+      "name": "prescriptions",
+      "fileName": "prescriptions.json"
+    }
+  ],
+  "mongodbUri": "mongodb+srv://graphicology7_db_user:Gq2qtWvRuowTq023@***"
+}
