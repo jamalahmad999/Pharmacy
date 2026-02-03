@@ -5,8 +5,10 @@ import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Icons } from "@/components/Icons";
 import { brands as staticBrands, healthPackages } from "@/data/categories";
+import { Suspense } from 'react';
 
-export default function CategoryBar({ isMobile = false, onClose = null, isPage = false }) {
+// 1. Asli logic ko ek alag component mein rakhen
+function CategoryBarContent({ isMobile = false, onClose = null, isPage = false }) {
   const [categories, setCategories] = useState([]);
   const [dbBrands, setDbBrands] = useState([]);
   const [showCategories, setShowCategories] = useState(false);
@@ -348,7 +350,6 @@ export default function CategoryBar({ isMobile = false, onClose = null, isPage =
                   <div className="w-1/3 border-r border-gray-100 bg-white p-4 max-h-[400px] overflow-y-auto">
                     {hoveredGroup && groupedCategories[hoveredGroup] ? (
                       <div>
-                        {/* <h3 className="font-bold text-gray-900 text-sm mb-3">{hoveredGroup} Subcategories</h3> */}
                         {groupedCategories[hoveredGroup].length > 0 ? (
                           <div className="space-y-1">
                             {groupedCategories[hoveredGroup].map((subcategory) => (
@@ -388,7 +389,6 @@ export default function CategoryBar({ isMobile = false, onClose = null, isPage =
                   <div className="w-5/12 bg-white p-4 max-h-[400px] overflow-y-auto">
                     {hoveredSubGroup && hoveredSubGroup.children ? (
                       <div>
-                        {/* <h3 className="font-bold text-gray-900 text-sm mb-3">{hoveredSubGroup.name} Sub-subcategories</h3> */}
                         {hoveredSubGroup.children.length > 0 ? (
                           <div className="grid grid-cols-4 gap-2">
                             {hoveredSubGroup.children.map((subsubcategory) => (
@@ -562,5 +562,26 @@ export default function CategoryBar({ isMobile = false, onClose = null, isPage =
         </div>
       </div>
     </div>
+  );
+}
+
+// 2. Main component mein usay Suspense se wrap karein
+export default function CategoryBar({ isMobile = false, onClose = null, isPage = false }) {
+  return (
+    <Suspense fallback={
+      <div className="hidden md:block bg-white border-b border-gray-200 shadow-sm fixed top-16 left-0 right-0 z-40 pt-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-12">
+            <div className="text-sm text-gray-500">Loading categories...</div>
+          </div>
+        </div>
+      </div>
+    }>
+      <CategoryBarContent 
+        isMobile={isMobile} 
+        onClose={onClose} 
+        isPage={isPage} 
+      />
+    </Suspense>
   );
 }
