@@ -19,14 +19,13 @@ export default function LoginPage() {
     setError('');
 
     try {
-      const response = await fetch('/api/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+     const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://pharmacy-9yls.vercel.app';
 
+const response = await fetch(`${apiUrl}/api/auth/login`, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(formData),
+});
       const data = await response.json();
 
       if (!response.ok) {
