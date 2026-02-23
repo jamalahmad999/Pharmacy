@@ -58,13 +58,27 @@ app.get('/', (req, res) => {
 });
 
 // Health check
-app.get('/health', (req, res) => {
-  res.json({ 
-    status: 'OK', 
-    timestamp: new Date().toISOString(),
-    service: 'lifepharmacy-backend',
-    database: database.isConnected() ? 'connected' : 'disconnected'
-  });
+// Health check (Vercel Optimized)
+app.get('/health', async (req, res) => {
+  try {
+    // Agar database connected nahi hai, toh connection ka wait karein
+    if (!database.isConnected()) {
+      await database.connect();
+    }
+    
+    res.json({ 
+      status: 'OK', 
+      timestamp: new Date().toISOString(),
+      service: 'lifepharmacy-backend',
+      database: database.isConnected() ? 'connected' : 'disconnected'
+    });
+  } catch (error) {
+    res.status(500).json({ 
+      status: 'Error', 
+      database: 'disconnected',
+      message: error.message 
+    });
+  }
 });
 
 // 404 handler
