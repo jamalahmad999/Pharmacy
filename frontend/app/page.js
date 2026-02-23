@@ -54,7 +54,7 @@ export default function Home() {
 
   const fetchProducts = async () => {
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+      const apiUrl = 'https://pharmacy-9yls.vercel.app';
       
       // Fetch general products (enough for both sections)
       try {
